@@ -1,0 +1,57 @@
+/* Common Shared Style start here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  /* border: 1px solid red; */
+}
+:root {
+  --primary-color: #06c167;
+}
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Common Shared Style end here */
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+header > nav > h1 {
+  color: var(--primary-color);
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+#home {
+  color: var(--primary-color);
+}
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* mobile device style here */
+
+@media  screen and (max-width:576px) {
+  nav{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav > ul{
+    flex-direction: column;
+  }
+}
