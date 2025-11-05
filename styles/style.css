@@ -122,7 +122,10 @@ gap: 50px;
 }
 
 /* hero section end here */
-
+.health{
+  min-height: 200px;
+  display: flex;
+}
 /* mobile device style here */
 
 @media  screen and (max-width:576px) {
