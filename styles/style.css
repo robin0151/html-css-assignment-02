@@ -11,11 +11,17 @@
 :root {
   --primary-color: #06c167;
 }
-body{
+.body-width{
   max-width: 1440px;
   margin: 0 auto;
 }
 /* Common Shared Style end here */
+
+/* header section style start here */
+header{
+  background-color: #F3FCF7;
+  height: 70vh;
+}
 header > nav {
   display: flex;
   justify-content: space-between;
@@ -41,11 +47,89 @@ header > nav > ul > li > a {
   text-decoration: none;
   color: black;
 }
+/* header section style end here */
 
+.hero{
+  display: flex;
+  
+}
+.hero-para{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-para h2{
+  font-size: 75px;
+  font-weight: 600;
+}
+.hero-para p{
+  font-size: 16px;
+}
+.btn-primary button{
+  padding: 25px 30px;
+  background-color: #06C167;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero-img{
+  width: 40%;
+}
+.hero-img img{
+  width: 465px;
+  height: 630px;
+clip-path: polygon(0 1%, 100% 0%, 100% 86%, 0 94%);
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+.right-place {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 10%;
+  position: absolute;
+  right: 300px;
+  top: 200px;
+  background-color: #FFFFFF;
+}
+.right-place img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.brand-logo{
+display: flex;
+gap: 50px;
+}
+.logo-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.logo-1 img{
+  opacity: 55%;
+}
+.logo-1 p{
+  color: #394149;
+  opacity: 55%;
+}
+
+/* hero section end here */
 
 /* mobile device style here */
 
 @media  screen and (max-width:576px) {
+
+  header{
+    height: 100vh;
+  }
   nav{
     flex-direction: column;
     text-align: center;
@@ -53,5 +137,27 @@ header > nav > ul > li > a {
 
   nav > ul{
     flex-direction: column;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero-para{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero-img{
+    width: 100%;
+  }
+  .hero-img img{
+    width: 100%;
+    height: auto;
+  }
+.brand-logo{
+  flex-wrap: wrap;
+}
+  .logo-1{
+    width: 100%;
+    height: auto;
   }
 }
